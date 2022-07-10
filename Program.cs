@@ -1,4 +1,4 @@
-﻿
+
 namespace JuniorHomeWork
 {
     internal class Program
@@ -20,7 +20,9 @@ namespace JuniorHomeWork
                     brackets++;
                 }
                 else
+                {
                     brackets--;
+                }
 
                 if (brackets < 0)
                 {
@@ -33,8 +35,9 @@ namespace JuniorHomeWork
                     streak++;
                 }
                 else
+                {
                     streak = minStreak;
-
+                }
                 if (streak > maxStreak)
                 {
                     maxStreak = streak;
@@ -48,7 +51,9 @@ namespace JuniorHomeWork
                 Console.WriteLine("Выражение корректно, максимальная глубина вложенности составляет " + maxStreak);
             }
             else
+            {
                 Console.WriteLine("Открывающих скобок больше, чем закрывающих");
+            }
         }
     }
 }
