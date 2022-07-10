@@ -5,7 +5,7 @@ namespace JuniorHomeWork
     {
         static void Main(string[] args)
         {
-            string symbolString = "()()()()((()))";
+            string symbolString = "()()()())))";
             int minStreak = 1;
             int maxStreak = 1;
             int streak = 1;
@@ -16,7 +16,9 @@ namespace JuniorHomeWork
             {
 
                 if (symbols == '(')
+                {
                     brackets++;
+                }
                 else
                     brackets--;
 
@@ -34,13 +36,17 @@ namespace JuniorHomeWork
                     streak = minStreak;
 
                 if (streak > maxStreak)
+                {
                     maxStreak = streak;
+                }
 
                 previousSymbol = symbols;
             }
 
             if (brackets == 0)
+            {
                 Console.WriteLine("Выражение корректно, максимальная глубина вложенности составляет " + maxStreak);
+            }
             else
                 Console.WriteLine("Открывающих скобок больше, чем закрывающих");
         }
