@@ -38,6 +38,7 @@ namespace JuniorHomeWork
                 {
                     streak = minStreak;
                 }
+                
                 if (streak > maxStreak)
                 {
                     maxStreak = streak;
